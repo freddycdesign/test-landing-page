@@ -6,14 +6,16 @@
 
 nav {
   display: block;
+  position:fixed;
+  width:100%;
   top: 0px;
   background-color: #1f2937;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 div.nav-wrapper {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
@@ -48,7 +50,7 @@ div.hero-wrapper {
 }
 div.hero-text {
   margin-top: 125px;
-  margin-left: 10%;
+  margin-left: 15%;
   display: block;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -65,7 +67,7 @@ div.hero-text {
 }
 .hero-img {
   width: 425px;
-  margin: 120px 10% 125px auto;
+  margin: 120px 15% 125px auto;
 }
 button {
   background-color: #008cba;
@@ -77,4 +79,41 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.container-top > h3 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+
+div.container-top.img-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-top {
+  height: 400px;
+  text-align: center;
+}
+
+.container-mid {
+  background-color: #e5e7eb;
+  height: 300px;
+}
+.img-square {
+  width: 155px;
+  height: 155px;
+}
+
+p.quote {
+  font-size: 24px;
+  width: 45%;
+  margin: 0 auto 0 auto;
+  padding-top: 100px;
 }
