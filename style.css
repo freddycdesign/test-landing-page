@@ -15,7 +15,7 @@ nav {
 
 div.nav-wrapper {
   display: flex;
-  width: 70%;
+  width: 890px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
@@ -92,7 +92,7 @@ div.container-top.img-wrap {
   display: flex;
   justify-content: center;
   gap: 24px;
-  width: 80%;
+  width: 875px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -116,4 +116,30 @@ p.quote {
   width: 45%;
   margin: 0 auto 0 auto;
   padding-top: 100px;
+}
+
+.container-bottom {
+  height: 200px;
+}
+
+.cta-box {
+  background-color:#008cba;
+  border-radius: 6px;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  height:120px;
+  width:875px;
+}
+
+.cta-header {
+  color:white;
+  font-size: 16px;
+  padding: 40px 0px 5px 135px;
+}
+
+.cta-subtext {
+  color:white;
+  font-size: 12px;
+  padding-left:135px;
 }
