@@ -1,149 +1,166 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: sans-serif;
 }
 body {
   background-color: #1f2937;
-}
-header {
-  background-color: #1f2937;
-}
-nav {
   display: flex;
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0px;
-  background-color: #1f2937;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
   padding-top: 15px;
+  padding-left: 95px;
+  padding-right: 95px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 ul {
-  display: flex;
-  gap: 20px;
   list-style: none;
-  flex-shrink: 1;
+  display: flex;
+  gap: 24px;
 }
 
-h4.nav-header {
+.header-logo {
+  font-size: 24px;
+  color: white;
+  flex-grow: 1;
+}
+
+.header-link {
+  font-size: 16px;
+  color: white;
+}
+
+.hero {
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:95px;
+  padding-right:95px;
+  margin-top: 120px;
+  margin-bottom: 150px;
+}
+
+.hero-left {
+  flex-grow:1;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: white;
+  margin-top: 20px;
+  width: 350px;
+  margin-bottom: 5px;
+}
+
+.hero-subtext {
   font-size: 18px;
   color: white;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
+  width: 450px;
+  margin-bottom: 5px;
 }
 
-li.nav-link {
-  font-size: 14px;
-  color: white;
-  align-self: flex-end;
-}
-
-div.hero-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  width: 940px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #1f2937;
-  color: white;
-}
-div.hero-text {
-  margin-top: 125px;
-  display: block;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-.hero-text > h2 {
-  flex-grow: 1;
-  font-size: 40px;
-  max-width: 300px;
-}
-
-.hero-text p {
-  max-width: 410px;
-  margin: 10px 0 25px 0;
-}
 .hero-img {
-  width: 425px;
-  margin: 120px 0 125px auto;
+  height: 280px;
+  background-color: grey;
+  flex-basis: 500px;
+  flex-shrink: 0;
 }
-button {
-  background-color: #008cba;
+
+.button {
+  background-color: #3799d2; /* Green */
   border: none;
-  border-radius: 4px;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 26px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
-.container-top > h3 {
-  padding-top: 50px;
-  padding-bottom: 20px;
+.container-info {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 36px;
+  margin: 46px;
+}
+
+.info-content {
+  display: flex;
+  gap: 75px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.info-text {
+  margin-top: 10px;
+  color: #1f2937;
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  border: 4px solid #3799d2;
+  border-radius: 18px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  width: 155px;
   text-align: center;
-  font-size: 28px;
+  align-items: center;
 }
 
-div.container-top.img-wrap {
+.container-quote {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  width: 875px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-top {
-  background-color: white;
-  height: 400px;
-  text-align: center;
-}
-
-.container-mid {
+  align-items: center;
+  height: 450px;
+  width: 100%;
   background-color: #e5e7eb;
-  height: 300px;
 }
-.img-square {
-  width: 155px;
-  height: 155px;
-}
-
-p.quote {
-  font-size: 24px;
-  width: 45%;
-  margin: 0 auto 0 auto;
-  padding-top: 100px;
+.quote {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 100;
 }
 
-.container-bottom {
+.quote-content {
+  width: 925px;
+}
+
+.container-cta {
+  width: 100%;
   height: 300px;
   background-color: white;
-  display: flex;
 }
 
-.cta-box {
-  background-color: #008cba;
-  border-radius: 6px;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+footer {
+  width: 100%;
   height: 100px;
-  width: 600px;
-  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cta-header {
-  color: white;
-  font-size: 16px;
-  padding: 30px 0px 5px 135px;
-}
-
-.cta-subtext {
-  color: white;
-  font-size: 12px;
-  padding-left: 135px;
+.footer-text {
+  font-size: 14px;
+  color: #e5e7eb;
 }
